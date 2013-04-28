@@ -1,6 +1,7 @@
 name = Item Keys
 core = 7.x
 package = ekb
+php = 5.2.4
 dependencies[] = features
 dependencies[] = feeds
 dependencies[] = number
