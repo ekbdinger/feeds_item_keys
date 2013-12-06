@@ -24,7 +24,10 @@ function item_keys_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Item Keys';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    5 => '5',
+  );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -413,7 +416,7 @@ function item_keys_views_default_views() {
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = '<p>To find a particular Item Key, search by Item Key Number.  In documentation it will list the Item Key Code = (Item Key Number + Version Code). For example, the item key "ShowICDForRx" is 1589_DMI.  Just enter <strong>1589</strong> into the Item Key Number field and press the <strong>Search</strong> button and it will display only that item key.</p>
 <p>&nbsp;</p>';
-  $handler->display->display_options['header']['area']['format'] = 'filtered_html';
+  $handler->display->display_options['header']['area']['format'] = '2';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Item Key Number */
   $handler->display->display_options['fields']['field_ik_number']['id'] = 'field_ik_number';
