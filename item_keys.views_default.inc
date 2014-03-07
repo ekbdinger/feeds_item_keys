@@ -26,6 +26,8 @@ function item_keys_views_default_views() {
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
+    3 => '3',
+    55 => '55',
     5 => '5',
   );
   $handler->display->display_options['cache']['type'] = 'none';
@@ -300,40 +302,136 @@ function item_keys_views_default_views() {
     1 => 0,
     3 => 0,
   );
-  /* Filter criterion: Search: Search Terms */
-  $handler->display->display_options['filters']['keys']['id'] = 'keys';
-  $handler->display->display_options['filters']['keys']['table'] = 'search_index';
-  $handler->display->display_options['filters']['keys']['field'] = 'keys';
-  $handler->display->display_options['filters']['keys']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['keys']['expose']['operator_id'] = 'keys_op';
-  $handler->display->display_options['filters']['keys']['expose']['label'] = 'Search Title/Version';
-  $handler->display->display_options['filters']['keys']['expose']['operator'] = 'keys_op';
-  $handler->display->display_options['filters']['keys']['expose']['identifier'] = 'keys';
-  $handler->display->display_options['filters']['keys']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-  );
   /* Filter criterion: Content: Title */
   $handler->display->display_options['filters']['title']['id'] = 'title';
   $handler->display->display_options['filters']['title']['table'] = 'node';
   $handler->display->display_options['filters']['title']['field'] = 'title';
-  $handler->display->display_options['filters']['title']['operator'] = 'starts';
+  $handler->display->display_options['filters']['title']['operator'] = 'contains';
   $handler->display->display_options['filters']['title']['exposed'] = TRUE;
   $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['label'] = 'Title';
-  $handler->display->display_options['filters']['title']['expose']['use_operator'] = TRUE;
+  $handler->display->display_options['filters']['title']['expose']['label'] = 'Search Title';
   $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
   $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
   $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
     2 => '2',
-    1 => 0,
     3 => 0,
+    1 => 0,
+    23 => 0,
+    21 => 0,
+    36 => 0,
+    43 => 0,
+    39 => 0,
+    25 => 0,
+    46 => 0,
+    9 => 0,
+    31 => 0,
+    19 => 0,
+    14 => 0,
+    15 => 0,
+    13 => 0,
+    5 => 0,
+    22 => 0,
+    12 => 0,
+    30 => 0,
+    38 => 0,
+    11 => 0,
+    42 => 0,
+    40 => 0,
+    29 => 0,
+    32 => 0,
+    35 => 0,
+    41 => 0,
+    28 => 0,
+    16 => 0,
+    45 => 0,
+    27 => 0,
+    24 => 0,
+    37 => 0,
+    26 => 0,
+    34 => 0,
+    18 => 0,
+    17 => 0,
+    33 => 0,
+    44 => 0,
+    20 => 0,
+    7 => 0,
+    8 => 0,
+    47 => 0,
+    48 => 0,
+    49 => 0,
+    50 => 0,
+    51 => 0,
+    52 => 0,
+    53 => 0,
+    54 => 0,
+  );
+  /* Filter criterion: Content: Version/Build (field_ik_version_build) */
+  $handler->display->display_options['filters']['field_ik_version_build_value']['id'] = 'field_ik_version_build_value';
+  $handler->display->display_options['filters']['field_ik_version_build_value']['table'] = 'field_data_field_ik_version_build';
+  $handler->display->display_options['filters']['field_ik_version_build_value']['field'] = 'field_ik_version_build_value';
+  $handler->display->display_options['filters']['field_ik_version_build_value']['operator'] = 'starts';
+  $handler->display->display_options['filters']['field_ik_version_build_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_ik_version_build_value']['expose']['operator_id'] = 'field_ik_version_build_value_op';
+  $handler->display->display_options['filters']['field_ik_version_build_value']['expose']['label'] = 'Search Version';
+  $handler->display->display_options['filters']['field_ik_version_build_value']['expose']['operator'] = 'field_ik_version_build_value_op';
+  $handler->display->display_options['filters']['field_ik_version_build_value']['expose']['identifier'] = 'field_ik_version_build_value';
+  $handler->display->display_options['filters']['field_ik_version_build_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    3 => 0,
+    1 => 0,
+    23 => 0,
+    21 => 0,
+    36 => 0,
+    43 => 0,
+    39 => 0,
+    25 => 0,
+    46 => 0,
+    9 => 0,
+    31 => 0,
+    19 => 0,
+    14 => 0,
+    15 => 0,
+    13 => 0,
+    5 => 0,
+    22 => 0,
+    12 => 0,
+    30 => 0,
+    38 => 0,
+    11 => 0,
+    42 => 0,
+    40 => 0,
+    29 => 0,
+    32 => 0,
+    35 => 0,
+    41 => 0,
+    28 => 0,
+    16 => 0,
+    45 => 0,
+    27 => 0,
+    24 => 0,
+    37 => 0,
+    26 => 0,
+    34 => 0,
+    18 => 0,
+    17 => 0,
+    33 => 0,
+    44 => 0,
+    20 => 0,
+    7 => 0,
+    8 => 0,
+    47 => 0,
+    48 => 0,
+    49 => 0,
+    50 => 0,
+    51 => 0,
+    52 => 0,
+    53 => 0,
+    54 => 0,
   );
 
   /* Display: All Item Keys */
   $handler = $view->new_display('page', 'All Item Keys', 'page');
-  $handler->display->display_options['path'] = 'item-keys';
+  $handler->display->display_options['path'] = 'item-keys/admin';
   $handler->display->display_options['menu']['title'] = 'Item Keys';
   $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'main-menu';
@@ -387,7 +485,7 @@ function item_keys_views_default_views() {
     1 => 0,
     3 => 0,
   );
-  /* Filter criterion: Search: Search Terms */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['keys']['id'] = 'keys';
   $handler->display->display_options['filters']['keys']['table'] = 'search_index';
   $handler->display->display_options['filters']['keys']['field'] = 'keys';
@@ -415,6 +513,8 @@ function item_keys_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = '<p>To find a particular Item Key, search by Item Key Number.  In documentation it will list the Item Key Code = (Item Key Number + Version Code). For example, the item key "ShowICDForRx" is 1589_DMI.  Just enter <strong>1589</strong> into the Item Key Number field and press the <strong>Search</strong> button and it will display only that item key.</p>
+<p>You can also search by <strong>Title</strong> and <strong>Version</strong>.  If you want to find the V10 item keys, type "10" (without quotes) and press the <strong>Search</strong> button.
+<p>To see all the details of a particular item key, click on the Title of particular item key.<p>
 <p>&nbsp;</p>';
   $handler->display->display_options['header']['area']['format'] = '2';
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -510,7 +610,6 @@ function item_keys_views_default_views() {
   $handler->display->display_options['fields']['field_ik_version_build']['id'] = 'field_ik_version_build';
   $handler->display->display_options['fields']['field_ik_version_build']['table'] = 'field_data_field_ik_version_build';
   $handler->display->display_options['fields']['field_ik_version_build']['field'] = 'field_ik_version_build';
-  $handler->display->display_options['fields']['field_ik_version_build']['exclude'] = TRUE;
   $handler->display->display_options['path'] = 'item-keys/search';
   $export['item_keys'] = $view;
 
