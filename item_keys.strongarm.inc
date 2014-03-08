@@ -103,6 +103,9 @@ function item_keys_strongarm() {
         'feeds' => array(
           'weight' => '6',
         ),
+        'badges' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(),
     ),
