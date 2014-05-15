@@ -27,7 +27,6 @@ function item_keys_views_default_views() {
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     3 => '3',
-    55 => '55',
     5 => '5',
   );
   $handler->display->display_options['cache']['type'] = 'none';
@@ -485,7 +484,7 @@ function item_keys_views_default_views() {
     1 => 0,
     3 => 0,
   );
-  /* Filter criterion: Broken/missing handler */
+  /* Filter criterion: Search: Search Terms */
   $handler->display->display_options['filters']['keys']['id'] = 'keys';
   $handler->display->display_options['filters']['keys']['table'] = 'search_index';
   $handler->display->display_options['filters']['keys']['field'] = 'keys';
